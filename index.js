@@ -77,7 +77,7 @@ const update = () => {
     if(emoji.posY < 0) return;
     // disappear effect
     emoji.opacity = interpolation(0, intPosition.y, 0, 1, emoji.posY);
-    ctx['fillStyle'] = `rgba(0, 0, 0, ${emoji.opacity})`;
+    ctx['fillStyle'] = `rgba(255, 255, 255, ${emoji.opacity})`;
 
     ctx.fillText(emoji.value, intPosition.x +  Math.cos(emoji.grades) * MAX_AMPLITUDE + emoji.diff, emoji.posY)
   })
